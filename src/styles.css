@@ -1,4 +1,45 @@
+img {
+  display: block;
+  border: 0;
+  width: 200px;
+  height: auto;
+  margin-left: 50px;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: line;
+}
+.card {
+  display: flex;
+  flex-direction: line;
+  flex: 0 1 24%;
+  display: inline-block;
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.card-content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1.4em;
+  background-color: #7c82d7;
+  border-radius: 5px;
+  width: 300px;
+  height: 500px;
+}
+
+.container {
+  padding: 2px 4px;
 }

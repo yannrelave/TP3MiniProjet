@@ -5,14 +5,12 @@ import movie from "./Films.json";
 
 function Film(props) {
   return (
-    <div className="casrd">
+    <div className="card">
       <div className="card-content">
-        
-      <img
-          src={props.i.medium}
-          alt={`Profile of ${props.name.first}`}
-          style={{ width: "100%" }}
-        />
+        <img src={props.image} />
+        <h1>{props.rank}</h1>
+        <h4>{props.fullTitle}</h4>
+        <p>{props.year}</p>
       </div>
     </div>
   );
@@ -29,7 +27,6 @@ export default function App() {
   return (
     <div className="App">
       <h1>Liste de films</h1>
-      <h1>{movie.title}</h1>
       <div className="card">
         {movie.items.map((movie, index) => {
           return <Film {...movie} key={index} />;
